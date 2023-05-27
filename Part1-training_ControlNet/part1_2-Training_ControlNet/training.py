@@ -8,7 +8,7 @@ from cldm.model import create_model, load_state_dict
 
 
 # Configs
-resume_path = './models/control_sd15_canny.pth'
+resume_path = './models/control_sd15_ini.ckpt'
 batch_size = 1
 logger_freq = 300
 learning_rate = 1e-5
@@ -25,7 +25,7 @@ model.only_mid_control = only_mid_control
 
 
 # Misc
-dataset = MyDataset(data_path='/content/gdrive/MyDrive/controlnet_dataset/dataset')
+dataset = MyDataset(data_path='./dataset')
 dataloader = DataLoader(dataset, num_workers=0, batch_size=batch_size, shuffle=True)
 logger = ImageLogger(batch_frequency=logger_freq)
 #trainer = pl.Trainer(gpus=1, precision=32, callbacks=[logger])
