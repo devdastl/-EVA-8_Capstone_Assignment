@@ -60,7 +60,7 @@ def prompt_json(caption, source, target, json_file):
         f.write('\n')
     f.close()
 
-path = '/content/gdrive/MyDrive/controlnet_dataset'
+path = './'
 list_images = get_images(path, image_path='Images')
 source, target, json_file = generate_dir(path)
 
