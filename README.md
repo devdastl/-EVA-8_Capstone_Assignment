@@ -20,5 +20,6 @@ This is the capstone assignment of Phase-1 of EVA-8 course from TSAI
 ### Getting started
 
 ### Inference output
+<img src="Part2-Inpainting_implementation/test_data/inpainting_output1.png" alt= “” width="500" height="">
 
 ## Conclusion
