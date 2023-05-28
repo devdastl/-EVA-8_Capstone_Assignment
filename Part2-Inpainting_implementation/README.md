@@ -14,5 +14,6 @@ This readme file specifically focuses on Part2 (Inpaining Implementation) of the
 
 ## Inference output
 Below are inference output from inpainting pipeline:
-<img src="test_data/inpainting_output1.png" alt= “” width="500" height="">
+
+ <img src="test_data/inpainting_output1.png" alt= “” width="500" height="">
 <img src="test_data/inpainting_output2.png" alt= “” width="500" height="">
