@@ -11,6 +11,7 @@ This is the capstone assignment of Phase-1 of EVA-8 course from TSAI
 ### Training output
 
 ### Inference output
+<img src="Part1-training_ControlNet/output_images/output_3.PNG" alt= “” width="500" height="">
 
 ## Part2: Implementation of Inpainting using Stable Diffusion
 
