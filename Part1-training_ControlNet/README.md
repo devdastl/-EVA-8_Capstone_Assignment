@@ -50,6 +50,15 @@ Part1-training_ControlNet/
 ```
 
 ## Dataset representation
+To train the ControlNet, I am using open source available dataset from [Standford Dog Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/) which contains approx 20,000 images for different breed of dogs.
+
+Below image shows how the target image for training looks like:
+
+<img src="output_images/dataset_target.PNG" alt= “” width="500" height="">
+</br>
+This is how source image looks like after preperation:
+
+<img src="output_images/dataset_source.PNG" alt= “” width="500" height="">
 
 ## Getting started
 Lets go through the steps to execute training using this repo:
