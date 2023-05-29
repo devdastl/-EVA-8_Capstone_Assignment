@@ -1,14 +1,16 @@
 import json
 import cv2
 import numpy as np
+import os
 
 from torch.utils.data import Dataset
 
 
 class MyDataset(Dataset):
-    def __init__(self):
+    def __init__(self, data_path):
         self.data = []
-        with open('./training/fill50k/prompt.json', 'rt') as f:
+        self.data_path = data_path
+        with open(os.path.join(self.data_path, 'prompt.json'), 'rt') as f:
             for line in f:
                 self.data.append(json.loads(line))
 
@@ -22,8 +24,8 @@ class MyDataset(Dataset):
         target_filename = item['target']
         prompt = item['prompt']
 
-        source = cv2.imread('./training/fill50k/' + source_filename)
-        target = cv2.imread('./training/fill50k/' + target_filename)
+        source = cv2.imread(os.path.join(self.data_path, source_filename))
+        target = cv2.imread(os.path.join(self.data_path, target_filename))
 
         # Do not forget that OpenCV read images in BGR order.
         source = cv2.cvtColor(source, cv2.COLOR_BGR2RGB)
